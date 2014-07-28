@@ -14,4 +14,8 @@ describe('luck_check') do
     luck_check("12321").should(eq(true))
   end
 
+  it('returns an error message if the inputted number is not valid') do
+    luck_check("potato").should(eq("Please enter a valid number"))
+  end
+
 end

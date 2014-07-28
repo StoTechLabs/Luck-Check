@@ -1,4 +1,9 @@
 def luck_check(number_string)
+
+if number_string.to_i == 0
+  "Please enter a valid number"
+else
+
   number_array = number_string.split("").map(&:to_i)
 
     if number_string.length.odd?
@@ -19,6 +24,7 @@ def luck_check(number_string)
     else
       false
     end
+  end
 end
 
-# puts luck_check(813372)
+# puts luck_check(56328116)
